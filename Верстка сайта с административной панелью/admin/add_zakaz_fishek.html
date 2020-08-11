@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="UTF-8">
+<title>Мечты Сбываются</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<link rel="stylesheet" href="admin_css/bootstrap.min.css">
+<script src="admin_js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body class = "page">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style = "background-color:black;" >
+  <a class="navbar-brand" href="#">Администратор</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О нас</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Цены</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Стоимость</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Отзывы</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link disabled" href="#">Рейтинг</a>
+      </li>
+      
+    </ul>
+
+
+  </div>
+</nav>
+<div class = "shapka">
+	<div class="d-flex justify-content-between flex-wrap" style = "margin-left:15px;">
+        <a href="#" class="btn btn-primary my-2">Список клиентов</a>
+		<a href="#" class="btn btn-primary my-2">Список сотрудников</a>
+		<a href="#" class="btn btn-primary my-2">Список "фишек"</a>
+		<a href="#" class="btn btn-primary my-2">Список услуг</a>
+		<a href="#" class="btn btn-primary my-2">Список заказов</a>
+		<a href="#" class="btn btn-primary my-2">Список дополнительных услуг</a>
+        
+     </div>
+
+</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Администратор</a></li>
+	 <li class="breadcrumb-item"><a href="#">Список заказов фишек</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Добавить заказ фишек</li>
+  </ol>
+</nav>
+<div class = "container">
+<div class = "row">
+<h1 >Добавить заказ фишек</h1></div>
+
+	 </div> 
+<div class = "container-fluid">
+
+ <div class="form-group" style = "   
+    margin-top: 2em;">
+     <label for="exampleInput">Дата заказа</label>
+   
+         <div class="input-group input-group-sm col-4 m-01 p-1 ">
+				<input class="form-control" type="date" value="1993-10-10">
+  </div>
+
+
+ </div>
+
+	 </div> 
+<div class = "container-fluid">
+<div class = "row">
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Фишка</th>
+      <th scope="col">Описание</th>
+      <th scope="col">Количество</th>
+	   <th scope="col">Макет</th>
+	    <th scope="col"></th>
+	   
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">такая то</th>
+	  <td>бла бла бла</td>
+      <td>10 000</td>
+	    <td><button type="button" class="btn btn-primary">Изменить макет</button>
+		 <button type="button" class="btn btn-info">Добавить макет</button></td>
+		 <td><button type="button" class="btn btn-primary">Изменить фишку</button>
+		 <button type="button" class="btn btn-info">Добавить фишку</button></td>
+		 
+    
+    </tr>
+  </tbody>
+</table>
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Клиент</th>
+	    <th scope="col"></th>
+	   
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">такая то</th>
+
+		 <td><button type="button" class="btn btn-primary">Изменить клиента</button>
+		 <button type="button" class="btn btn-info">Добавить клиента</button></td>
+		 
+    
+    </tr>
+  </tbody>
+</table>
+ </div>
+ </div>
+ 
+ 
+ 
+<div class = "container" style = "margin-top:1em;">
+<div class = "row">
+<button type="button" class="btn btn-outline-primary">Рассчитать стоимость заказа</button>
+</div>
+</div>
+    
+<div class = "container">
+<div class = "row"> 
+   
+<input class="form-control" type="text" style = "    width: 21.5%;
+    height: 40px;
+    margin-top: 1em;" placeholder="10 000 рублей " readonly>
+</div>
+</div>
+ <div class = "container" style = "margin-top:4em;">
+<div class = "row">
+  <button type="submit" class="btn btn-primary">Добавить</button>
+    <button type="submit" class="btn btn-secondary">Изменить данные</button></DIV>
+</div>
+</div>
+<footer class = "container-py 5" style = "margin-top:13.6em;">
+<div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>© 2019
+              <a href="#">Мечты Сбываются</a>.Все права защищены.
+              
+            </p>
+          </div>
+		   </div>
+ </div>
+  </div>
+   </div>
+   </footer>
+</body>
+</html>

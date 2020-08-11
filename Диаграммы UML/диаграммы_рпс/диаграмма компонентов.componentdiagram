@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="9ce97ae8-4462-480e-9511-d1fafa3d0891" name="диаграмма компонентов" linkedPackageId="82ab6141-b3da-4297-9b70-ad9573b9905b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d8c37f40-f853-4cbd-9f29-3cc65614f476">
+      <profileInstance Id="5f47c0a5-faf9-408b-be89-96202d42e71c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="296a4cee-f7ea-4dd5-9746-e474010f3a89">
+      <profileInstance Id="f793a011-ef7e-4f1f-90f6-d7b436f9f7ac" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="a6215b93-b6de-40fc-a846-3809eca2fa88" name="Сервер" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06e35746-2908-44fa-a43a-b6b18209da05" />
+        <ownedAttributesInternal>
+          <part Id="21e0f1f0-7a0a-4808-a565-44e3915285d9" name="База данных" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="d3fdfa45-8445-4019-b72f-ed63d20ec4a7" />
+            <type_NamedElement>
+              <componentMoniker Id="3a7cb880-657e-4ad5-bd5b-3939f0ffe523" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3a7cb880-657e-4ad5-bd5b-3939f0ffe523" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="08e8afdd-9a09-4900-9079-446b01f9fa95" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8f0abbd0-c3d5-4c23-a168-cf26fda5c46b" name="ПК пользователя" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1bbdc84f-4b67-4773-9126-bf2d3a1ac8f4" />
+        <suppliersInternal>
+          <dependency Id="f974de6d-a72d-488e-a40f-17d3c49cd8c3">
+            <componentMoniker Id="a6215b93-b6de-40fc-a846-3809eca2fa88" LastKnownName="Сервер" />
+            <elementDefinition Id="41831d84-3b59-45b7-b354-9c869c1cd02e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="9f9350a4-3551-433b-bae5-6178355af1c5" name="Клиентское приложение" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="422b3814-37b1-4aac-99a9-3e5438176c99" />
+            <type_NamedElement>
+              <componentMoniker Id="6737089b-e8a9-47a8-b59e-af5b743b18ee" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6737089b-e8a9-47a8-b59e-af5b743b18ee" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="32d74dd9-dd70-4b8d-995d-559889e3a0a2" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="82ab6141-b3da-4297-9b70-ad9573b9905b" name="диаграммы_рпс">
+    <elementDefinition Id="f019a18f-83db-4c54-b079-7deda2b3b7f6" />
+  </package>
+</componentModel>

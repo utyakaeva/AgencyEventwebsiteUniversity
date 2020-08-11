@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Мечты Сбываются</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+<link rel="stylesheet" href="admin_css/bootstrap.min.css">
+<script src="admin_js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body class = "page">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style = "background-color:black;" >
+  <a class="navbar-brand" href="#">Администратор</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О нас</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Цены</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Стоимость</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#">Отзывы</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link disabled" href="#">Рейтинг</a>
+      </li>
+      
+    </ul>
+
+<a href="#" class="nav-link">Выход</a>
+  </div>
+</nav>
+<div class = "shapka">
+	<div class="d-flex justify-content-between flex-wrap" style = "margin-left:15px;">
+        <a href="#" class="btn btn-primary my-2">Список клиентов</a>
+		<a href="#" class="btn btn-primary my-2">Список сотрудников</a>
+		<a href="#" class="btn btn-primary my-2">Список "фишек"</a>
+		<a href="#" class="btn btn-primary my-2">Список услуг</a>
+		<a href="#" class="btn btn-primary my-2">Список заказов</a>
+		<a href="#" class="btn btn-primary my-2">Список дополнительных услуг</a>
+        
+     </div>
+
+</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Администратор</a></li>
+	 <li class="breadcrumb-item"><a href="#">Список заказов услуг</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Заказ № 1.</li>
+  </ol>
+</nav>
+<div class = "container">
+<div class = "row">
+<h1 >Заказ № 1.</h1>
+</div>
+
+</div>
+<div class = "container-fluid">
+<div class = "row">
+<div class = "col">
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Клиент : Иванов Иван Иванович</li>
+    <li class="list-group-item">Статус заказа: Оформлен</li>
+    <li class="list-group-item">Дата заказа : 23.12.2018</li>
+  </ul>
+</div></div>
+<div class = "col">
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Стоимость : 20 000 000 рублей</li>
+    <li class="list-group-item">Дата окончания заказа : 26.12.2018</li>
+	<li class="list-group-item"><button type="button" class="btn btn-primary">Открыть карточку клиента</button></li>
+  </ul>
+</div>
+</div>
+ </div>
+ </div>
+
+
+<div class = "container">
+<button type="button" class="btn btn-info" style = "   
+    /* display: flex; */
+    margin-bottom: -1em; margin-top:2em;">Добавить работника</button>
+<div class = "row">
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Номер работника</th>
+	  <th scope="col">ФИО работника</th>
+      <th scope="col">Данные</th>
+      <th scope="col">Цена в час</th>
+	   <th scope="col"> </th>
+	   <th scope="col"> </th>
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+	    <td>Иванов Иван Иванович</td>
+	  <td>бла бла бла</td>
+      <td>10 000 рублей</td>
+	      <td><button type="button" class="btn btn-primary">Открыть карточку работника</button></td>
+		 <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    
+    </tr>
+  </tbody>
+</table>
+ </div>
+ </div>
+
+<div class = "container">
+<button type="button" class="btn btn-info" style = "  
+    /* display: flex; */
+    margin-bottom: -1em;">Добавить услугу</button>
+<div class = "row">
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Номер услуги</th>
+	   <th scope="col">Название услуги</th>
+      <th scope="col">Данные</th>
+      <th scope="col">Цена</th>
+	   <th scope="col"> </th>
+	   <th scope="col"> </th>
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+	  <td>Корпоратив</td>
+	  <td>бла бла бла</td>
+      <td>10 000 рублей</td>
+	    <td><button type="button" class="btn btn-primary">Открыть карточку услуги</button></td>
+		 <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    
+    </tr>
+  </tbody>
+</table>
+ </div>
+ </div>
+ 
+
+<div class = "container">
+ 
+ <button type="button" class="btn btn-info" style = "    
+    /* display: flex; */
+    margin-bottom: -1em;">Добавить доп.услугу</button>
+<div class = "row">
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Номер доп.услуги</th>
+	  <th scope="col">Название доп. услуги</th>
+      <th scope="col">Данные</th>
+      <th scope="col">Цена</th>
+	   <th scope="col"> </th>
+	   <th scope="col"> </th>
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+	   <td>Фотограф</td>
+	  <td>бла бла бла</td>
+      <td>10 000 рублей</td>
+	    <td><button type="button" class="btn btn-primary">Открыть карточку доп.услуги</button></td>
+		 <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    
+    </tr>
+  </tbody>
+</table>
+ </div>
+ </div>
+
+<div class = "container">
+ 
+  <button type="button" class="btn btn-info" style = "    
+    margin-bottom: -1em;">Добавить фишку</button>
+<div class = "row">
+
+<table class="table table-bordered" style = "margin-top:2em;">
+  <thead>
+    <tr>
+      <th scope="col">Номер фишки</th>
+	  <th scope="col">Название фишки</th>
+      <th scope="col">Данные</th>
+      <th scope="col">Цена за шт</th>
+	   <th scope="col">Цена итоговая</th>
+	    <th scope="col">Количество</th>
+	   <th scope="col"> </th>
+	   <th scope="col"> </th>
+	
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+	    <td>Сувенирная бутылка</td>
+	  <td>бла бла бла</td>
+	  <td>10 000 рублей</td>
+      <td>10 000 рублей</td>
+	  <td> <div class = "container">
+<div class = "row"><div class = "col"><input class="form-control" placeholder="100" type="text" style ></div><div class = "col"><button type="button" class="btn btn-success">ОК</button></div> </div>
+ </div></td>
+	    <td><button type="button" class="btn btn-primary">Открыть карточку фишки</button></td>
+		 <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    
+    </tr>
+  </tbody>
+</table>
+ </div>
+ </div>
+ 
+ 
+ <div class = "container">
+<div class = "row">
+<nav aria-label="...">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        1
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+ <div class = "container">
+<div class = "row"> 
+
+<a href = "list_clients.html"><button type="submit" class="btn btn-primary" style = "    margin-top: 4em;">Вернуться к списку заказов услуг</button></a>
+</div>
+</div>
+<footer class = "container-py 5" style = "margin-top:13.6em;">
+<div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>© 2019
+              <a href="#">Мечты Сбываются</a>.Все права защищены.
+              
+            </p>
+          </div>
+		   </div>
+ </div>
+  </div>
+   </div>
+   </footer>
+</body>
+</html>

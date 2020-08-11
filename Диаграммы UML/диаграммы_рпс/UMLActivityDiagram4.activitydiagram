@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="04134cb4-8dd1-47e8-8fb8-5e7890891fd8" name="Диаграмма действий &quot;Макет фишки&quot;" linkedPackageId="33b20c68-a8c6-4ab8-94c2-9f066bd1278d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a4208852-03d0-45ed-9454-0a349e8b5b0f">
+      <profileInstance Id="070bdf3a-79ad-43d7-b748-30a23c458697" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="736b0121-5dcf-47cd-a772-16efe0cbcd8e">
+      <profileInstance Id="736e1e11-4767-4309-8183-d4e781489347" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="bb0cad0e-a1ed-4803-a4b0-9a4a711603fb" name="Диаграмма действий &quot;Макет фишки&quot;" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="068af53b-81f4-460e-90e0-6edffb863f2a" />
+        <nodes>
+          <initialNode Id="19730a50-e1ec-4563-b1dd-2eb315424eb8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="26ed80f1-0e09-486d-a3f9-5630f2986462" />
+            <flowNodeTargets>
+              <controlFlow Id="2d1a5512-1e4d-477d-b011-8456c867c660" isLeaf="false">
+                <opaqueActionMoniker Id="11e1f15c-f841-4838-844c-428da0c5258d" LastKnownName="Открытие формы макета фишки " />
+                <elementDefinition Id="b48a0fd4-bbe6-467f-b44b-395e123c6bd0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="11e1f15c-f841-4838-844c-428da0c5258d" name="Открытие формы макета фишки " isLeaf="false">
+            <elementDefinition Id="1c21c0a2-ea8f-429a-b323-566fb98d5cf4" />
+            <flowNodeTargets>
+              <controlFlow Id="3316c636-e4ff-453a-86d3-1bd2a153f809" isLeaf="false">
+                <opaqueActionMoniker Id="9799ac73-be2d-4cf6-8c74-cbb879d30d8f" LastKnownName="Добавление фотографии макета" />
+                <elementDefinition Id="89c73de2-d0d1-42aa-963e-03f18ceb5048" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9799ac73-be2d-4cf6-8c74-cbb879d30d8f" name="Добавление фотографии макета" isLeaf="false">
+            <elementDefinition Id="33d8b264-9b97-4a1c-a20d-41ac097da4c0" />
+            <flowNodeTargets>
+              <controlFlow Id="efa6670f-d0d7-4f52-af8c-41e67e69def9" isLeaf="false">
+                <opaqueActionMoniker Id="f6bcc09c-905f-4406-af31-ad56941f5539" LastKnownName="Отправка клиенту" />
+                <elementDefinition Id="50e06b60-cace-4f5c-bc32-0a3140622953" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f6bcc09c-905f-4406-af31-ad56941f5539" name="Отправка клиенту" isLeaf="false">
+            <elementDefinition Id="6b1e13a0-7128-4f3e-bf70-910937220ba4" />
+            <flowNodeTargets>
+              <controlFlow Id="de13e5c8-0a18-413d-8927-d1f7991bae88" isLeaf="false">
+                <opaqueActionMoniker Id="ee54e3f4-b312-4ea2-918d-46a1d95f921c" LastKnownName="Оформление фишки с данным макетом" />
+                <elementDefinition Id="46859cb1-4765-4ab0-ba69-11a5c44067dd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ee54e3f4-b312-4ea2-918d-46a1d95f921c" name="Оформление фишки с данным макетом" isLeaf="false">
+            <elementDefinition Id="a1bc614f-e17f-46b1-a7bc-3fe1b7867719" />
+            <flowNodeTargets>
+              <controlFlow Id="f9371d1b-61f7-4fcc-81ef-780c38a212c2" isLeaf="false">
+                <decisionNodeMoniker Id="8a834eee-273a-41dc-858d-67f93f8f8912" LastKnownName="Decision1" />
+                <elementDefinition Id="78d308e3-9d01-4497-94c2-4389c67a1d57" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e5bd67fd-da61-43f2-aae1-b611b22e0b97" name="Сохранение макета" isLeaf="false">
+            <elementDefinition Id="3f0a8130-3000-4490-8846-e08c58b687a0" />
+            <flowNodeTargets>
+              <controlFlow Id="6decaf8e-1296-4bdd-890d-2a13c5bba99f" guard="Внести еще поправки" isLeaf="false">
+                <opaqueActionMoniker Id="ee54e3f4-b312-4ea2-918d-46a1d95f921c" LastKnownName="Оформление фишки с данным макетом" />
+                <elementDefinition Id="b5044337-7d60-4b68-9815-8a352f9285c8" />
+              </controlFlow>
+              <controlFlow Id="fd551e42-6fda-472a-b333-67d5d7d79bb8" guard="Выход" isLeaf="false">
+                <activityFinalNodeMoniker Id="e9481065-f030-4c93-9d65-f212c375430e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="32ae95e3-3144-4a42-96a5-978bd4bfe7da" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="e9481065-f030-4c93-9d65-f212c375430e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="4dcbb94a-85f7-451a-9d79-39578d14699f" />
+          </activityFinalNode>
+          <decisionNode Id="8a834eee-273a-41dc-858d-67f93f8f8912" name="Decision1" isLeaf="false">
+            <elementDefinition Id="d3429bfb-305f-4a45-97b3-e88584eda3ad" />
+            <flowNodeTargets>
+              <controlFlow Id="a6b5468d-bc6f-444a-b9a9-bc171f330215" guard="Сохранить макет" isLeaf="false">
+                <opaqueActionMoniker Id="e5bd67fd-da61-43f2-aae1-b611b22e0b97" LastKnownName="Сохранение макета" />
+                <elementDefinition Id="0fd7e73f-02c8-4508-8ce9-d46e7bae0a6c" />
+              </controlFlow>
+              <controlFlow Id="25e78f86-be31-4d5f-932a-cf5439e18c60" guard="Выход" isLeaf="false">
+                <activityFinalNodeMoniker Id="e9481065-f030-4c93-9d65-f212c375430e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="734dc37e-6031-4400-a78e-03a7e547a75c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="33b20c68-a8c6-4ab8-94c2-9f066bd1278d" name="диаграммы_рпс">
+    <elementDefinition Id="f019a18f-83db-4c54-b079-7deda2b3b7f6" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{360ad656-9913-4d74-bd00-46f4996f03d9}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>диаграммы_рпс</Name>
+    <RootNamespace>диаграммы_рпс</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="UMLActivityDiagram1.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagram1.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagram2.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagram2.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagram2.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLActivityDiagram4.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagram4.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagram4.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="123.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="123.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>123.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="диаграмма интерфейсов.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="диаграмма интерфейсов.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>диаграмма интерфейсов.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="менеджер.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="менеджер.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>менеджер.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="последовательностей - добавление клиента.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="последовательностей - добавление клиента.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>последовательностей - добавление клиента.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="диаграмма классов.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="диаграмма классов.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>диаграмма классов.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="диаграмма компонентов 2.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="диаграмма компонентов 2.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>диаграмма компонентов 2.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="диаграмма компонентов.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="диаграмма компонентов.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>диаграмма компонентов.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="последовательностей просмотр списка клиентов.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="последовательностей просмотр списка клиентов.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>последовательностей просмотр списка клиентов.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="последовательностей удаление клиента.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="последовательностей удаление клиента.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>последовательностей удаление клиента.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="последовательностей - редактирование клиента.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="последовательностей - редактирование клиента.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>последовательностей - редактирование клиента.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="последовательностей авторизация.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="последовательностей авторизация.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>последовательностей авторизация.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\диаграммы_рпс.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

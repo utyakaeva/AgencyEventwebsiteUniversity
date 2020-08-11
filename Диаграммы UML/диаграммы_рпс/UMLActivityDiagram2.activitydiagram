@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="59938468-2f15-48a4-9781-d6f11e2b62b1" name="диаграмма действий &quot;работа со списком сотрудников&quot;" linkedPackageId="cc90fff1-5642-43c3-9604-9297d2115200" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="66a08673-0b15-40c1-84c6-d3afb07629a5" name="диаграмма действий &quot;работа со списком сотрудников&quot;" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="6c8bc5ad-622b-488b-9f3a-cd39243b8363" />
+        <nodes>
+          <opaqueAction Id="a48594e9-26d1-4da8-8c03-7b062331dd55" name="Вывод интерфейса для сис.админа" isLeaf="false">
+            <elementDefinition Id="264e69d4-2029-4ab8-8ffd-995b96a186e9" />
+            <flowNodeTargets>
+              <controlFlow Id="943840f5-a695-4f9e-bc69-4b571958f52f" isLeaf="false">
+                <decisionNodeMoniker Id="f63ee47a-022f-4917-8499-40a137c1e6e2" LastKnownName="Decision1" />
+                <elementDefinition Id="a563f14c-b090-4021-9ad8-66f4fb465bd3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="392ac224-2bda-4037-be34-11f5556c8acf" name="Вывод списка сотрудников" isLeaf="false">
+            <elementDefinition Id="8170f2f1-5121-4c79-ba19-27565d2cc663" />
+            <flowNodeTargets>
+              <controlFlow Id="2912bace-3d1b-41b9-89f6-a1faefec3b1b" isLeaf="false">
+                <forkNodeMoniker Id="203f5710-028a-4fb1-bf2d-96663cd97384" LastKnownName="Fork1" />
+                <elementDefinition Id="9707d9c4-40c6-4b84-ae9e-22bcc400d477" />
+              </controlFlow>
+              <controlFlow Id="dc9fb4ef-568a-4587-8688-d658c5e680c5" guard="Закрыть программу" isLeaf="false">
+                <activityFinalNodeMoniker Id="dfebed12-8feb-4b1f-921a-f1e6936806b6" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="1d26f70e-e534-48a3-ba30-9ddaac8b4383" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="f63ee47a-022f-4917-8499-40a137c1e6e2" name="Decision1" isLeaf="false">
+            <elementDefinition Id="db1b06b1-9d0d-42a5-a844-bb1cbc8e7b05" />
+            <flowNodeTargets>
+              <controlFlow Id="5f0065fe-aa79-4457-aa42-d18e2947c62e" guard="Выбрана вкладка &quot;Сотрудники&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="392ac224-2bda-4037-be34-11f5556c8acf" LastKnownName="Вывод списка сотрудников" />
+                <elementDefinition Id="508d4d06-b94f-4693-bc8c-15a53e234af2" />
+              </controlFlow>
+              <controlFlow Id="9525b2e3-3a7b-4c9e-8304-eb3802e71cf7" isLeaf="false">
+                <activityFinalNodeMoniker Id="dfebed12-8feb-4b1f-921a-f1e6936806b6" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="30f018d3-4c71-4e81-a6c3-b55a0cb053e4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="7c289a56-66c6-4c50-b43e-e5cfaa69af91" name="Добавление сотрудника" isLeaf="false">
+            <elementDefinition Id="699f186e-a0d7-42c3-8768-e5785ffb2541" />
+            <flowNodeTargets>
+              <controlFlow Id="4a0c1e24-350d-48df-ba6a-02a04bc38ee4" isLeaf="false">
+                <opaqueActionMoniker Id="cbc043b9-3e62-445b-b050-86e4028f5f29" LastKnownName="Вывод данных о сотруднике" />
+                <elementDefinition Id="ee4fa8fb-439d-453c-a919-3ee123e5dd1b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9be8d88e-899f-4eba-969b-ca5191a264ad" name="Изменение сотрудника" isLeaf="false">
+            <elementDefinition Id="db0bf5b4-e2e0-4b5c-a9c5-95ec1ae1e637" />
+            <flowNodeTargets>
+              <controlFlow Id="1f9ab6f0-6065-4fa7-93a0-88021cb5da0e" isLeaf="false">
+                <joinNodeMoniker Id="4190cd91-809b-45a4-8e5b-707058a1fa24" LastKnownName="Join1" />
+                <elementDefinition Id="bd1e220d-7674-4d36-9f0b-ebcae769eea0" />
+              </controlFlow>
+              <controlFlow Id="1ce7f554-f018-497a-8fc7-ff9df6d57dfa" guard="Закрытие формы изменение сотрудника" isLeaf="false">
+                <opaqueActionMoniker Id="392ac224-2bda-4037-be34-11f5556c8acf" LastKnownName="Вывод списка сотрудников" />
+                <elementDefinition Id="45df9caa-0943-4ab0-a9b0-1c082c7bc313" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6580c4c6-f0ec-4eb7-bcd0-3aa3709bfd27" name="Удаление сотрудника" isLeaf="false">
+            <elementDefinition Id="59590044-01f0-4788-99a9-679018377784" />
+            <flowNodeTargets>
+              <controlFlow Id="d054aaee-72ff-45bd-ac91-92a2a8a3218e" isLeaf="false">
+                <joinNodeMoniker Id="4190cd91-809b-45a4-8e5b-707058a1fa24" LastKnownName="Join1" />
+                <elementDefinition Id="92ab48c6-7d93-4719-a549-f4c46c6abe53" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="203f5710-028a-4fb1-bf2d-96663cd97384" name="Fork1" isLeaf="false">
+            <elementDefinition Id="96861cb0-e000-4816-991c-c52cf39572bb" />
+            <flowNodeTargets>
+              <controlFlow Id="a3cf73de-b892-4173-9513-9399d5380fc9" guard="Нажата кнопка &quot;Добавление сотрудника&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="7c289a56-66c6-4c50-b43e-e5cfaa69af91" LastKnownName="Добавление сотрудника" />
+                <elementDefinition Id="cc161df1-2095-4cf4-b6c9-efc49de759ad" />
+              </controlFlow>
+              <controlFlow Id="bbe302f4-2648-4011-8875-512840b23a5d" guard="Нажата кнопка &quot;Изменение сотрудника&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="9be8d88e-899f-4eba-969b-ca5191a264ad" LastKnownName="Изменение сотрудника" />
+                <elementDefinition Id="f0277257-09ca-4457-8748-a980f9dc49ad" />
+              </controlFlow>
+              <controlFlow Id="2e033c70-c034-4180-a0b8-9e0454c055da" guard="Нажата кнопка &quot;Удаление сотрудника&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="6580c4c6-f0ec-4eb7-bcd0-3aa3709bfd27" LastKnownName="Удаление сотрудника" />
+                <elementDefinition Id="a96e3ae5-0f0e-4a15-8dbe-68726863bbba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="cbc043b9-3e62-445b-b050-86e4028f5f29" name="Вывод данных о сотруднике" isLeaf="false">
+            <elementDefinition Id="87eb22da-a667-4c2b-8798-a28c59805923" />
+            <flowNodeTargets>
+              <controlFlow Id="20c8fee0-0f40-456c-bcb2-7c53ed762fa1" guard="Закрытие формы добавление сотрудника" isLeaf="false">
+                <opaqueActionMoniker Id="392ac224-2bda-4037-be34-11f5556c8acf" LastKnownName="Вывод списка сотрудников" />
+                <elementDefinition Id="a1474621-d4d3-45b9-9068-d33f1a92f1ae" />
+              </controlFlow>
+              <controlFlow Id="056faf4b-856d-4681-b012-dfbd1b3f3b3d" isLeaf="false">
+                <joinNodeMoniker Id="4190cd91-809b-45a4-8e5b-707058a1fa24" LastKnownName="Join1" />
+                <elementDefinition Id="b6f93967-1ba7-44ef-b9be-84c944c6d114" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="4190cd91-809b-45a4-8e5b-707058a1fa24" name="Join1" isLeaf="false">
+            <elementDefinition Id="7834a9d1-eca6-467b-ab9e-9f20228901ff" />
+            <flowNodeTargets>
+              <controlFlow Id="25c0de9f-a9c5-419a-a9ba-c9867ba62b0b" isLeaf="false">
+                <opaqueActionMoniker Id="392ac224-2bda-4037-be34-11f5556c8acf" LastKnownName="Вывод списка сотрудников" />
+                <elementDefinition Id="c631303d-e5c1-4b3c-ad4d-c9fd7e1a5560" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="dfebed12-8feb-4b1f-921a-f1e6936806b6" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="296d4507-0a55-4337-b680-7740437014fe" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="cc90fff1-5642-43c3-9604-9297d2115200" name="диаграммы_рпс">
+    <elementDefinition Id="f019a18f-83db-4c54-b079-7deda2b3b7f6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="700e2dfc-5377-48cf-aedd-d3bbb8901dcc">
+        <profileInstance Id="80ffb7bb-72ef-4ed2-a9a7-2964325dc973" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4b2ae3cd-b835-4e05-9900-d26a9935f2d5">
+        <profileInstance Id="c3c191b8-a763-437f-a247-97c60b3a727b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,1099 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="302c7041-e72c-479f-ad86-8c1511bbcf6c" name="UMLUseCaseDiagram1" linkedPackageId="376a7309-5815-4b9c-8e04-a9e71d3eb7c5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="aed70b3f-9640-4f0b-8dfc-c9510e81958c" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54816a48-91c4-4058-a930-fe1c2e4da48c" />
+        <generalsInternal>
+          <generalization Id="5f167851-69ab-43a8-85a4-db47a399ac77" isSubstitutable="false">
+            <actorMoniker Id="97463ee2-4ce5-4e44-a5e0-f61370b4026d" LastKnownName="Менеджер" />
+            <elementDefinition Id="d9295514-07b2-42b1-b203-887b07b1a813" />
+          </generalization>
+          <generalization Id="355efce1-729c-4278-b9d3-9fca6504b131" isSubstitutable="false">
+            <actorMoniker Id="6551cb02-d0c2-4216-b2ba-c4b90214919e" LastKnownName="Сотрудник" />
+            <elementDefinition Id="625fe822-67a7-409d-9608-9eeb3a8845c6" />
+          </generalization>
+          <generalization Id="8aa281bb-7034-42a9-ba4e-e52731761846" isSubstitutable="false">
+            <actorMoniker Id="dce74e74-f716-456f-b0d3-eff0e0692f70" LastKnownName="Заказчик" />
+            <elementDefinition Id="7904cd38-1685-4e21-98f1-b2061285b2fc" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6551cb02-d0c2-4216-b2ba-c4b90214919e" name="Сотрудник" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f4cf70f-c18f-4b77-affe-aa1709fe1700" />
+        <targetEnds>
+          <association Id="e7b1c628-1f65-447d-916f-b56206861b0e" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Изменение данных" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="41330eb7-da9f-4882-8fe0-5f8ca9670ee9" LastKnownName="Изменение данных" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87fc0434-69a8-4c91-ac5c-56c1ba78aa4b" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="53184fa8-3ba8-4141-898a-9054e987b8bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4432981-bb66-48a1-aff9-3ee9afb5ace5" name="Изменение данных" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5df6b4f2-5b15-48dc-a65f-ff5f8aa7979a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a53e550d-57f4-4627-8925-08f294c4cab8" />
+          </association>
+          <association Id="4ee09e27-5ef8-482b-9940-432cf91544bd" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Регистрация" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="26ed4a42-2114-4a0c-aa04-c1506df82a0a" LastKnownName="Регистрация" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c1f3101-523a-4718-a0e4-139dc68e219b" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f2f0b90e-2ddc-4eea-b4e4-f5949071f3a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a546ad2-5e29-47a5-8467-8d5a62e9014d" name="Регистрация" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b181ae17-4eb3-4969-af4a-db34f566d44a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db5207bf-b502-4a5e-8755-d01f2300b31d" />
+          </association>
+          <association Id="3bae9d89-a098-4c6a-bb08-16dd1b553f5a" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Изменение пароля" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="edc5f67f-147c-490a-ba7f-6ea290bbb28e" LastKnownName="Изменение пароля" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa172242-c960-45db-895f-ca2c0dc18350" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4cf400d5-5a05-4752-a66e-66c78458054b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33bfc4ed-6587-45c6-97c0-f5799d615cfe" name="Изменение пароля" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb9251b9-f49f-4329-9f9e-884a2494166f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef8fca2f-9892-4ceb-9e89-2d89c89265f9" />
+          </association>
+          <association Id="13c7e775-cc36-4638-a528-8fcfeab03bcb" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Просмотр своих заказов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="65cbb303-3e84-4fe0-87be-151419f45cf3" LastKnownName="Просмотр своих заказов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f405ff80-3659-461c-ab30-e7a7fc14e0d1" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="197d8b06-409b-4008-9d57-c99630dbe414" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="611f3648-3981-4249-8031-ccb4aa3b765c" name="Просмотр своих заказов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="90ebe92e-9af4-49b5-ab00-6425d641dd40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d798a2ed-6260-4ecd-acfe-f76c8006465e" />
+          </association>
+          <association Id="b60a651b-3692-4d07-8b6f-997a6d425a89" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Просмотр отзывов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7304581d-50e6-4f81-a212-60b0fd3d6aa5" LastKnownName="Просмотр отзывов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93932772-917e-4d41-820c-81ac1c281d42" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="693e4aa5-c1d0-4ebe-af42-3485aa354ed9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c74e6b18-6dcf-4436-aa53-48b656386cc0" name="Просмотр отзывов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dee7abe9-1953-40b4-8910-90bf41cb92f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9248b6b3-4f10-45de-9d74-2a3361e97422" />
+          </association>
+          <association Id="22fd410f-8045-4f33-a18c-6fe9f21c9c14" isDerived="false" sourceEndRoleName="Сотрудник" targetEndRoleName="Измеение графика работы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="525e4d91-d164-48f9-b257-5d8bc53041c6" LastKnownName="Изменение графика работы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e7690dd-9244-438b-8dde-55906db43e98" name="Сотрудник" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="80eca73c-302a-4a93-93f6-e31b2c8726d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a8359940-6a15-4f90-8fec-31ed5b410fd6" name="Измеение графика работы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="41623c26-4358-44cc-be58-b6e108bc9b2f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8f5ccdf1-136b-4be5-b576-599784d649bd" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="dce74e74-f716-456f-b0d3-eff0e0692f70" name="Заказчик" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c7ab6ff5-6622-4d7d-8438-0c9ab7777770" />
+        <targetEnds>
+          <association Id="18fc872c-a3b8-4443-9d88-8aadd3636f79" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Регистрация" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="938cf16d-7801-4c9f-a2cf-4d1396ed7255" LastKnownName="Регистрация" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4133ff78-0fe8-416a-9afe-cd9ea9efcb51" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50049710-c9b7-4d37-98d0-4d88875b83d4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3df7f1f-bfb3-4ce2-8efa-d052098bebe2" name="Регистрация" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0982500-ce08-456e-ab31-0d70d5eac4e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4f90aea-4479-4391-ab81-cc524d1e090e" />
+          </association>
+          <association Id="732cb393-b717-4f7a-994a-d1579cda2e6c" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Добавление личных данных" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="97e54239-68ee-4ae7-9539-02e76c1941c8" LastKnownName="Добавление личных данных" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2926734-c479-4f92-9465-44d2afb4ba97" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e8e3e5e-d5d5-4318-becb-4dfdc7947192" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="076627aa-1987-4a2d-97fb-d55cc3337d91" name="Добавление личных данных" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad08c863-de6f-4c42-a1c8-be9cb3e75cda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="86fa44af-b6df-4b82-bee9-238587df0360" />
+          </association>
+          <association Id="d9e5770d-f043-4e57-ae67-bd889db3303d" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Изменение личных данных" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="19bfd7cc-7d4a-4ba4-b4d2-d64c11d7a211" LastKnownName="Изменение личных данных" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="610a322e-b12d-4d2f-8c68-8664d42593c5" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74ffc22d-40ca-4e00-8004-56669d64b62b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf91422c-0c1c-4922-8a75-9745ff03e1d9" name="Изменение личных данных" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9bf8d96c-ebb0-4484-9520-e9c988c93075" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="941d07b4-348a-4bd6-abe6-865e704af341" />
+          </association>
+          <association Id="da5ee5f3-ed73-45f5-9db6-61ee83333c05" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр списка своих заказов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ff253d38-50d5-4395-8836-639ff7d68b53" LastKnownName="Просмотр списка своих заказов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d20d2d13-2634-49ae-a7ca-92c17848c245" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4c7cd799-77a5-4b5b-a2cc-f12d78aca9de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="130ff0f9-8040-4f8d-b2ed-0ae62dc79455" name="Просмотр списка своих заказов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76c0a497-9481-4579-82bf-c1b366310cf5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bdb2e129-7601-4728-9297-eb2f6bdbb7a0" />
+          </association>
+          <association Id="1a192e57-ed65-4189-bdb4-4b8b310d74d1" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр списка сотрудников" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8876a3b9-69fd-473a-b42d-4166fb47cbde" LastKnownName="Просмотр списка сотрудников" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31934290-51ec-4974-bddb-3ea215e10020" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b9599789-8fb5-474f-8d09-fd0de6406384" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ffb28752-f8d8-438b-9c62-5890844a00fa" name="Просмотр списка сотрудников" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17712f72-ee2b-48ff-8e09-cea14296249a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c8b1e0b0-7bbf-4262-b9f1-2fce99571dd5" />
+          </association>
+          <association Id="85ea9fe1-7315-45ce-9200-5056dec24090" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просморт списка услуг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2fa16e0c-f5e5-4736-82fc-9ff9d98812a7" LastKnownName="Просморт списка услуг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c815f200-b63b-48a2-8547-9c8e6d088055" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="daeafb5a-fb41-4b5f-82be-38cf8ebdf29b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9917a418-1bb2-4f71-b5a2-cb484d203bde" name="Просморт списка услуг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="772019c4-9d5e-449a-ba54-515676c2af72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6abd9def-6193-4049-b9f1-da572667eb66" />
+          </association>
+          <association Id="38a2fc17-a6f8-4261-a81a-ea35cc75351b" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр списка доп услуг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="deebcd81-268d-49c3-b094-b6fd40495abf" LastKnownName="Просмотр списка доп услуг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a382db0-292f-4161-89f3-6895fcc8566f" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4662cb42-6585-4a6e-a743-abfe49a4a494" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f964dc3-4d5d-40b0-8c60-eeace103812e" name="Просмотр списка доп услуг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b250189b-84c3-4ff2-b239-f5a411b8b921" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="452f528b-f603-434a-9ea3-65059b41b0df" />
+          </association>
+          <association Id="a003a83d-8b42-4dac-8c1a-89c26a30895b" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр списка фишек" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="92dcd590-4b06-41b1-a018-fc7f5e9ef48f" LastKnownName="Просмотр списка фишек" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac9c1ace-3198-4392-a22c-b3321ea294d1" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c8d568dd-3f3f-4cb8-94f1-8ea5c81a9af3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98f57123-5409-43e1-9758-6d673ee9c3ce" name="Просмотр списка фишек" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73b6e7cb-d1cd-4a5b-9a75-e639898fdbdc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dabfed18-f7c6-470c-9bca-57b31abf68e6" />
+          </association>
+          <association Id="5af36902-6a14-4858-b271-57adf39191d0" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Карточка клиента" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e03c4ac7-5231-42b6-acf0-76bc9179dc88" LastKnownName="Карточка клиента" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e78ad718-713f-4788-ba94-525f247084fe" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e1a7372-8d20-4244-9665-9968d1a9d38c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9295e5b7-0e42-4082-9aa9-b5f35030c8b7" name="Карточка клиента" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="37fc469e-2f6d-4fd2-a1a1-a3d6a0b5a778" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="42ad71c1-930c-4012-ad66-1542c04a2e31" />
+          </association>
+          <association Id="855e3384-fd32-4c73-a99f-8007616df5f9" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр списка отзывов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="77880036-b604-43b5-9ab5-be11b916b97f" LastKnownName="Просмотр списка отзывов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d46006f-be97-4d0a-98cf-0c4c9ab36b91" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4024a9db-904c-41e7-ab8c-3dbe9ad72436" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7541b3ec-f2f9-433c-b44e-7dc0c548ddee" name="Просмотр списка отзывов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0b2881a9-0a81-4ee3-be7a-16467578bc89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2864f6a1-ea8c-462e-84a1-95263e037e90" />
+          </association>
+          <association Id="ac3b43f5-78aa-4b9f-bd1a-9df3ac1d7955" isDerived="false" sourceEndRoleName="Заказчик" targetEndRoleName="Просмотр рейтинга" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6d2b99ec-7d59-4901-a84b-2af2ef8658cb" LastKnownName="Просмотр рейтинга" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5c97bf8-22b5-49ab-8525-afea7fc33a07" name="Заказчик" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="882aad80-7e6c-49a4-bd88-c8c04e5f6601" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48cd12e7-0aad-49be-b72c-42b26be92399" name="Просмотр рейтинга" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="40e8ce1b-9465-44d0-8189-040280c03bbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a60d374-4fed-49c1-a493-7d2487159ecf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="97463ee2-4ce5-4e44-a5e0-f61370b4026d" name="Менеджер" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c356ca2d-5c9a-4705-ba05-45a4511a904e" />
+        <targetEnds>
+          <association Id="717201e5-dfec-4bdb-9457-fb8f6608b265" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка сотрудников" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3dc93356-18b9-4d12-8ad9-a31c29545138" LastKnownName="Просмотр списка сотрудников" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23ec7163-ca01-4f97-994d-475629749ac4" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6fa1f574-3f5c-428d-9273-18571099c37a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fe3de87-9bd2-43bb-bcc6-3439068165a0" name="Просмотр списка сотрудников" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44f8210e-19a5-450b-8d25-e99e7faf5e63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f02f3203-9731-4695-9cd2-137cbd0790cb" />
+          </association>
+          <association Id="005f278e-0e1b-4915-b36b-42473e84df28" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка доп услуг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c7217ff7-faa1-494b-9c00-fc453ddd7501" LastKnownName="Просмотр списка доп услуг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9756def5-a291-4ea3-b3b2-2e47a554c1af" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7462a143-a461-4b9d-bb01-202d12de4d57" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc120d71-1934-4ca7-9856-88452e186b8e" name="Просмотр списка доп услуг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="59c6ee9e-1101-4a1a-8776-d7436aa3fc5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f9881f5-67bd-43e8-bf5e-1fd58cef0419" />
+          </association>
+          <association Id="79dd5b63-5c67-434f-bf54-93f8d16cf0a2" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка &quot;фишки&quot;" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b8c454cb-2ce4-4b3c-9657-40a4ac666cd7" LastKnownName="Просмотр списка &quot;фишки&quot;" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8aa3549e-e564-4c31-bfa4-4d6dbb838024" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c26f25a3-564f-4011-888a-12b0b8dcdd38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="272a3a71-9fd9-40ee-a4d3-5cd301a2631f" name="Просмотр списка &quot;фишки&quot;" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="07be93ba-8376-4c45-a331-b0d252bb361e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c4a2572-3a7b-4401-a033-b85404caa5d3" />
+          </association>
+          <association Id="4251b6ac-5aa7-44fb-83a2-3b1ba7a3f91b" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка тарифов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07ddefb0-be05-46e8-82d2-9ddc88ab99ba" LastKnownName="Просмотр списка тарифов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb3ba00e-06ab-48da-9254-a714b51cf749" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c61046e-2901-4316-a431-57e056d9c930" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d06250e-f617-496b-80cf-08187076670f" name="Просмотр списка тарифов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac5e652f-723b-433d-878c-5ca0c2882b02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce79fd06-2309-4553-bf00-d03976042a27" />
+          </association>
+          <association Id="e6f73d2d-786d-4125-9cec-3a68803df133" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка заказов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2b5e79a7-4893-4e08-b70d-a8991b39bdad" LastKnownName="Просмотр списка заказов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6415fdc6-18da-4ef6-bbe5-90ba8ddcc0bf" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="57b1f342-a44b-4e68-88ee-7e9568940b7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2ecff5a-ed04-4719-a07b-84860bd7e43e" name="Просмотр списка заказов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9eb96f67-10ea-4514-b39c-2c47a27e09f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4695ff6-e7e8-4f0c-9a5c-702391c5f8de" />
+          </association>
+          <association Id="317ad07e-6e02-4454-8180-b4084d53b774" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка услуг" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fe21f7ec-3d0e-4432-ba7b-37c923b0bbac" LastKnownName="Просмотр списка услуг" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce669fb8-0fb4-4d4c-9119-5055328d25f2" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="999ab159-a1b6-49a2-9cc1-d0afc79fca88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00e307fb-c37d-4389-8e32-6127ccc2402c" name="Просмотр списка услуг" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c4c1d183-e500-4733-9373-8fd7e8df5000" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff82f5b9-a5ba-40dd-8feb-b911225bc816" />
+          </association>
+          <association Id="8725c851-fa7f-4712-a6bf-bac745fe7807" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка отзывов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7220d8e0-619d-4b7e-b177-7b6ec0671a16" LastKnownName="Просмотр списка отзывов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cef2ec4e-da9c-439a-baf9-854c3c53bbf1" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f22bea7-4451-44a0-9e5d-9db7d8e4ead9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4013686f-fc3d-4e2e-bff7-0779674c0a70" name="Просмотр списка отзывов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a839f89c-3da8-4ffb-8f00-14a200e2db8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da2c9842-0a16-437e-82c4-f066144f6573" />
+          </association>
+          <association Id="cd35bc1b-2949-415d-9ee8-428c114272e3" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка клиентов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1b6c3f79-e735-4129-a49b-aeed301a805f" LastKnownName="Просмотр списка клиентов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d35334d-f8fb-4bb7-8b56-575019090885" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="686cd2bd-4f29-4be9-981a-3502a2aab49f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8eb7136a-8753-4704-9de6-b1711504d776" name="Просмотр списка клиентов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="264d5dbf-fcef-4e1f-884d-81b3d21de8e4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30e2aebf-fec9-4093-abc4-7792b1fb434b" />
+          </association>
+          <association Id="dd371996-4ff7-42ef-94d4-ed740eeecf9e" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка сценариев" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c18bbde9-6168-4502-beb8-84a7ee4d0171" LastKnownName="Просмотр списка сценариев" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="735cd27a-a810-4f17-b801-f37c6874a139" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88e4de01-7da8-4de3-90e3-56c4538ea6f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e710121a-0092-40cd-bb3f-4f783727e147" name="Просмотр списка сценариев" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="53b43f22-762e-4964-8cf4-b757b33607af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d295b5f-2a86-4701-9ee6-035c1ad1745e" />
+          </association>
+          <association Id="24db8fef-b291-4715-b725-31e7af5c64cb" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр рейтинга" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="314778a5-4f23-4c69-baa3-15f66e370ce2" LastKnownName="Просмотр рейтинга" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cfcea90-8937-4062-8762-e6a96002fd7b" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bebb0902-f886-4bad-bdb9-0fb8bd1d0623" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce420c53-edb6-488f-905a-a114c877b29c" name="Просмотр рейтинга" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="16f34308-0b37-4a65-9931-363b96be9d74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9c54b6dd-b424-45af-9259-259019042be9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="41330eb7-da9f-4882-8fe0-5f8ca9670ee9" name="Изменение данных" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="422bc9bf-6151-425a-823d-e5911dff0369" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26ed4a42-2114-4a0c-aa04-c1506df82a0a" name="Регистрация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e763165-07df-406a-a54d-a2d59ee1e7a4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="edc5f67f-147c-490a-ba7f-6ea290bbb28e" name="Изменение пароля" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd57c351-a10b-47b3-90bd-e26ec11c4f3d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="65cbb303-3e84-4fe0-87be-151419f45cf3" name="Просмотр своих заказов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa8f18a0-ab8b-4d31-a6f1-41689c068043" />
+        <additions>
+          <include Id="3e7c2e6e-b938-4f24-a705-4e791888515e">
+            <useCaseMoniker Id="9794afa5-d2eb-4758-b43c-2a29194155e1" LastKnownName="Направление в заказе" />
+            <elementDefinition Id="7d0ea194-abcf-486f-9536-141f779e5c36" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="525e4d91-d164-48f9-b257-5d8bc53041c6" name="Изменение графика работы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1248b385-ec7b-4b8c-a6c6-16787b223d1a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7304581d-50e6-4f81-a212-60b0fd3d6aa5" name="Просмотр отзывов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4b1954a-e6fa-45c0-b7b3-3af5e8d32afd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9794afa5-d2eb-4758-b43c-2a29194155e1" name="Направление в заказе" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70f0ee95-03fe-4f8a-bf6d-932a48d3020f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3dc93356-18b9-4d12-8ad9-a31c29545138" name="Просмотр списка сотрудников" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4894f9b-a81f-46f9-b40a-2d1808a032ce" />
+        <additions>
+          <include Id="05211920-da14-469f-8f09-9b0e43f9879b">
+            <useCaseMoniker Id="580a335b-b00c-41de-ac39-8650828acc66" LastKnownName="Добавление сотрудника" />
+            <elementDefinition Id="7a079966-f310-41bf-b3e3-e2a647b75ed8" />
+          </include>
+          <include Id="2d703229-fe18-41ef-9fa4-37a1ec9e2159">
+            <useCaseMoniker Id="f6d7804d-f91b-440a-973e-c7c065b1e8fc" LastKnownName="Изменение данных сотрудника" />
+            <elementDefinition Id="cce56f83-16ed-486a-b9a5-a6fd468dbd8a" />
+          </include>
+          <include Id="22c27f87-3d61-443e-97d0-1f93ac7fda0d">
+            <useCaseMoniker Id="46396bdd-27f3-4505-974a-eafea7a5ab25" LastKnownName="Удаление сотрудника" />
+            <elementDefinition Id="90bd260d-d493-4ca2-a67c-6dea6e076db3" />
+          </include>
+          <include Id="058bc46b-8c2d-4820-9268-987d84a26b7f">
+            <useCaseMoniker Id="98d079a7-0082-4a76-b6dd-28ac3dbe680e" LastKnownName="Подбор сотрудника" />
+            <elementDefinition Id="9d7aafa1-7879-4aeb-9075-210644a217d7" />
+          </include>
+          <include Id="87968e11-33e7-4dd3-ac98-9beb5aff0ef4">
+            <useCaseMoniker Id="c4507833-9d3c-4ae3-9da9-5156b336af7f" LastKnownName="Заказы сотрудника" />
+            <elementDefinition Id="0432f4e2-e5a2-40a4-98bf-ca48ec607cd5" />
+          </include>
+          <include Id="08e580b7-a769-482b-a3d4-f86fbbd72abc">
+            <useCaseMoniker Id="bd511cd5-d321-4bc3-92a2-1c139d639ecb" LastKnownName="Просмотр графика работы" />
+            <elementDefinition Id="b594b28a-756c-46c0-9210-7cb273d955fe" />
+          </include>
+          <include Id="32aab28b-283e-4dc7-8625-e9aa2e3e9004">
+            <useCaseMoniker Id="f0607fdd-62df-4d5c-9690-89b1f81b715d" LastKnownName="Поиск сотрудника" />
+            <elementDefinition Id="135b675f-6cf5-40d0-8877-3908fd8cf279" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2b5e79a7-4893-4e08-b70d-a8991b39bdad" name="Просмотр списка заказов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83f68504-ac6a-470b-998c-068ef2b934e1" />
+        <additions>
+          <include Id="43f2a66e-5c4b-46e9-9595-628e0e334a30">
+            <useCaseMoniker Id="f0c711ff-7d4e-4d59-bd78-f720aafc3129" LastKnownName="Добавление заказа" />
+            <elementDefinition Id="242d320f-5330-4f26-bf0d-af41318494e4" />
+          </include>
+          <include Id="0d8244e1-b709-4229-ae66-59a1e61d8edb">
+            <useCaseMoniker Id="36239a70-fc01-441c-99df-244eb7ce4260" LastKnownName="Удаление заказа" />
+            <elementDefinition Id="79582093-064c-4814-afed-fc924e2fbf27" />
+          </include>
+          <include Id="2b21dfd4-fe66-492e-9b41-542ced284019">
+            <useCaseMoniker Id="42c20e43-1f74-4c24-bf44-dc2c6f325852" LastKnownName="Изменение заказа" />
+            <elementDefinition Id="e633832c-133f-4e07-ac08-aceb8d4d7213" />
+          </include>
+          <include Id="e0862975-ad56-40fa-977a-2880342ee9b5">
+            <useCaseMoniker Id="1566f8dd-7e4a-445b-8a22-692a8f72f6f1" LastKnownName="Поиск заказа" />
+            <elementDefinition Id="afa97170-5852-4d9d-82b3-3082d787be04" />
+          </include>
+          <include Id="f00e7dcc-ede5-44cd-a0da-fc72fcfc3560">
+            <useCaseMoniker Id="65847b20-7ac6-4d4f-bf14-4a13690fc03a" LastKnownName="Фильтрация списка заказов" />
+            <elementDefinition Id="f8cade91-963a-44a9-90d5-87b7c8aee126" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7220d8e0-619d-4b7e-b177-7b6ec0671a16" name="Просмотр списка отзывов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="32c6d864-3515-418d-95a3-960dfb5bad62" />
+        <extendedCases>
+          <extend Id="faccc139-06ce-49c8-bc02-e0ee2283dd12">
+            <useCaseMoniker Id="0a4ce661-c6a3-454e-a80e-2d1f6b4474d9" LastKnownName="Изменение отзыва" />
+            <elementDefinition Id="856285f0-2416-437e-98b7-3d0dfd3620d4" />
+          </extend>
+          <extend Id="eca7aeb1-2c8b-442e-85f9-6ec55207d0aa">
+            <useCaseMoniker Id="9bfb573c-ca15-47f7-9ac8-028c4439bdd7" LastKnownName="Удаление отзыва" />
+            <elementDefinition Id="9b8d7683-fdad-4499-ba78-50dbe6790b44" />
+          </extend>
+          <extend Id="10ae3ed9-6023-4153-a057-3d696a160779">
+            <useCaseMoniker Id="875af584-4ff5-46d1-a369-373f351a7f96" LastKnownName="Добавление отзыва" />
+            <elementDefinition Id="a9e45efe-8011-4441-a143-36ee4121353b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1b6c3f79-e735-4129-a49b-aeed301a805f" name="Просмотр списка клиентов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb422e83-f0f6-4d07-83ee-7aca47ceb5a0" />
+        <additions>
+          <include Id="dcd7ebad-4324-4106-bbad-799da3bf2cff">
+            <useCaseMoniker Id="8b8890c3-8df0-4306-bf4b-0e35c47d1826" LastKnownName="Добавление клиента" />
+            <elementDefinition Id="bc211e30-e70a-47e8-96ca-b5b4b984b957" />
+          </include>
+          <include Id="a1af8eee-3c06-4b4f-8f8c-e07bd41829e7">
+            <useCaseMoniker Id="033769b1-5e83-48b7-b61f-c2066eabd8f9" LastKnownName="Удаление клиента" />
+            <elementDefinition Id="e79d5090-4f90-44db-969b-a69a2f80967a" />
+          </include>
+          <include Id="1a4a1ac4-9637-4115-9ecd-dd4c41e986bd">
+            <useCaseMoniker Id="a78ecb5e-8f09-44e4-8175-c0fc23786840" LastKnownName="Изменение данных клиента" />
+            <elementDefinition Id="f9add97e-45be-4bd7-8af8-4dc33d2190e0" />
+          </include>
+          <include Id="01294d28-85ea-451f-91f3-fcbb8511eb89">
+            <useCaseMoniker Id="f23c77f5-6933-4217-a02e-4c98b4e13c20" LastKnownName="Поиск клиента" />
+            <elementDefinition Id="5257c5fe-60eb-4eaa-8806-0928c5b6a6da" />
+          </include>
+          <include Id="599af1a7-8c64-462c-a93b-fcc60ae1c23f">
+            <useCaseMoniker Id="e03c4ac7-5231-42b6-acf0-76bc9179dc88" LastKnownName="Карточка клиента" />
+            <elementDefinition Id="1c7ff43c-e1bc-4e1f-8ac3-19f45d4bb2cf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="580a335b-b00c-41de-ac39-8650828acc66" name="Добавление сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="496cb74d-5682-4bf1-8644-90426ec563fa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f6d7804d-f91b-440a-973e-c7c065b1e8fc" name="Изменение данных сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a26410f-e047-4cdc-85a1-835ee3b592f9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="46396bdd-27f3-4505-974a-eafea7a5ab25" name="Удаление сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb663e8d-729b-40e6-b0d9-9b52d3d03516" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="98d079a7-0082-4a76-b6dd-28ac3dbe680e" name="Подбор сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2022e866-1da6-4266-bbfa-3f599af6622a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c4507833-9d3c-4ae3-9da9-5156b336af7f" name="Заказы сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2543f31b-33ff-466e-88de-35a0b25ba78e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bd511cd5-d321-4bc3-92a2-1c139d639ecb" name="Просмотр графика работы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="883a22de-3434-4de7-b9a0-9934d7427f8a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe21f7ec-3d0e-4432-ba7b-37c923b0bbac" name="Просмотр списка услуг" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8802133b-aa9f-441a-8d3b-b0b1479ff7f5" />
+        <additions>
+          <include Id="2e6762d4-7cef-4b85-b9f5-8649ca514b34">
+            <useCaseMoniker Id="b8af9326-5529-4d56-9b61-f7413b56b700" LastKnownName="Добавление услуги" />
+            <elementDefinition Id="f4f6e234-b5c5-4a77-82a6-964f92065ff5" />
+          </include>
+          <include Id="1ec2f370-5998-49d8-b93f-d48c9faf1113">
+            <useCaseMoniker Id="e9f699f2-4b94-408f-8981-fa1c30fb3c41" LastKnownName="Удаление услуги" />
+            <elementDefinition Id="e043d590-effa-4c8c-9ea4-15e6299805e8" />
+          </include>
+          <include Id="c37b728c-4b29-4162-95eb-c4dddbb2285a">
+            <useCaseMoniker Id="754c6277-3423-443b-b551-780d7e11efc4" LastKnownName="Изменение данных услуги" />
+            <elementDefinition Id="13119146-7ad1-46cc-aecf-d85996f2baea" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c7217ff7-faa1-494b-9c00-fc453ddd7501" name="Просмотр списка доп услуг" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92660f49-2b0a-4b93-8ec3-8c11b81e9ee5" />
+        <additions>
+          <include Id="6e235ee2-951b-4508-bb95-7bd566b00bdc">
+            <useCaseMoniker Id="afe3aa31-0643-4947-94a4-2d850221cf81" LastKnownName="Добавление доп услуги" />
+            <elementDefinition Id="ffbb12cd-030b-4176-b0c5-bd556388ea40" />
+          </include>
+          <include Id="1ef7262d-9973-4e1b-b443-c213794ab1e3">
+            <useCaseMoniker Id="4c57b31f-397c-4893-b689-bde2509d9d49" LastKnownName="Удаление доп услуги" />
+            <elementDefinition Id="a7657907-5d20-4d6e-8bd8-efbb06e67527" />
+          </include>
+          <include Id="d392857b-8c9e-440d-bb42-f3832ad03d73">
+            <useCaseMoniker Id="4e517e68-48e6-4475-ab03-7b4f35bc5ea1" LastKnownName="Изменение данных доп услуги" />
+            <elementDefinition Id="cc1fca62-77c0-4429-a747-91d5bfc65406" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07ddefb0-be05-46e8-82d2-9ddc88ab99ba" name="Просмотр списка тарифов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e171d093-538b-4381-8148-cd7cb7c99138" />
+        <extendedCases>
+          <extend Id="dcfddabf-a86e-424c-9aa0-c45c2b6f49de">
+            <useCaseMoniker Id="78a4d322-1cb2-4bac-b450-4b6e6f35a204" LastKnownName="Добавление  тарифа" />
+            <elementDefinition Id="f6dcc05b-23cd-42cc-8124-91fdda90d867" />
+          </extend>
+          <extend Id="06927c62-ae86-4755-b2c2-27016cd26deb">
+            <useCaseMoniker Id="a71084d1-f403-4859-8db0-5ae5249e50e8" LastKnownName="Удаление тарифа" />
+            <elementDefinition Id="7f520ded-7d3e-4650-af46-9d8cc48d19a0" />
+          </extend>
+          <extend Id="ff84c5b9-3d09-4baa-ac45-a8c983338fb7">
+            <useCaseMoniker Id="44011456-c996-4a19-8370-5b16e349e379" LastKnownName="Изменение данных тарифа" />
+            <elementDefinition Id="e25d2829-43ae-4bb0-980a-eecf14dc4763" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8c454cb-2ce4-4b3c-9657-40a4ac666cd7" name="Просмотр списка &quot;фишки&quot;" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0a54138-cd7c-4d57-9997-f6965aac0697" />
+        <extendedCases>
+          <extend Id="d872f47a-76c6-4271-aa6f-f4e60184e0ff">
+            <useCaseMoniker Id="d1534d8d-c38d-45de-b127-d18cfa2b2591" LastKnownName="Удаление &quot;фишки&quot;" />
+            <elementDefinition Id="3579631f-ac01-4073-b766-193bebdd96c5" />
+          </extend>
+          <extend Id="527e783a-45f8-4706-a9d3-aa1a7907c39d">
+            <useCaseMoniker Id="6b3727e5-51a3-4f21-9240-4683e13adf93" LastKnownName="Изменение данных &quot;фишки&quot;" />
+            <elementDefinition Id="4eb8d3f9-476b-42ff-9898-1268f457d79b" />
+          </extend>
+          <extend Id="538027e6-2e31-4e5d-bcf1-cb0e821b8244">
+            <useCaseMoniker Id="cb8fe0b8-47be-4887-8494-a8c8fce25957" LastKnownName="Добавление  &quot;фишки&quot;" />
+            <elementDefinition Id="58f6e03d-fa53-44a5-ae9e-97847da4fea4" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="afe3aa31-0643-4947-94a4-2d850221cf81" name="Добавление доп услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="31f7c667-a5c8-4739-b6c9-1699a25af489" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4c57b31f-397c-4893-b689-bde2509d9d49" name="Удаление доп услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d14e451f-38e8-4691-aa3b-fd92fb8a6037" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e517e68-48e6-4475-ab03-7b4f35bc5ea1" name="Изменение данных доп услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e69dd17-918f-471c-86e7-704811df7474" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b8af9326-5529-4d56-9b61-f7413b56b700" name="Добавление услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27e6f60c-f3d8-4bc7-bef4-e2239465099d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9f699f2-4b94-408f-8981-fa1c30fb3c41" name="Удаление услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="063ed7be-235d-4a1a-864d-7e93b6306b41" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="754c6277-3423-443b-b551-780d7e11efc4" name="Изменение данных услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a3081b4-4e3a-419e-a9a7-f156cbe7abe7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0607fdd-62df-4d5c-9690-89b1f81b715d" name="Поиск сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b93fc28-38b6-4df9-84cc-493b9e4002df" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cb8fe0b8-47be-4887-8494-a8c8fce25957" name="Добавление  &quot;фишки&quot;" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ee82f2bb-09a3-439f-9773-e0b5021a4e54" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d1534d8d-c38d-45de-b127-d18cfa2b2591" name="Удаление &quot;фишки&quot;" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e88aad5-7a0e-42ab-b7b4-fca0a52f097a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6b3727e5-51a3-4f21-9240-4683e13adf93" name="Изменение данных &quot;фишки&quot;" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50a3d15b-035c-43b9-ab47-eb390a3e8c3d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78a4d322-1cb2-4bac-b450-4b6e6f35a204" name="Добавление  тарифа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="793a9103-3a95-4be1-96f5-f18128918e13" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a71084d1-f403-4859-8db0-5ae5249e50e8" name="Удаление тарифа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="38a05d6b-3976-4791-9c31-35aad2d985ac" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="44011456-c996-4a19-8370-5b16e349e379" name="Изменение данных тарифа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="430fcfe8-1572-410a-a6fe-1d7a83210e5c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0a4ce661-c6a3-454e-a80e-2d1f6b4474d9" name="Изменение отзыва" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b81b5d3c-10a0-4945-b176-1a26e6f1e401" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9bfb573c-ca15-47f7-9ac8-028c4439bdd7" name="Удаление отзыва" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f60e651-078a-4650-b0f1-f26749a31277" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="875af584-4ff5-46d1-a369-373f351a7f96" name="Добавление отзыва" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79300552-2c1e-4d53-8262-a520bb454095" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0c711ff-7d4e-4d59-bd78-f720aafc3129" name="Добавление заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88469f3d-0086-416f-b0f3-4dbf8048f56d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="36239a70-fc01-441c-99df-244eb7ce4260" name="Удаление заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="535eaf09-c4a5-466b-b836-2d7bb2d3c034" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="42c20e43-1f74-4c24-bf44-dc2c6f325852" name="Изменение заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea452cf9-dd53-40a3-9d49-e6322a0962e8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1566f8dd-7e4a-445b-8a22-692a8f72f6f1" name="Поиск заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c366d72-ce56-4f3c-b997-07f15a5c0339" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b8890c3-8df0-4306-bf4b-0e35c47d1826" name="Добавление клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79bcbe9a-5911-480f-9c37-1dbc1353ebff" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="033769b1-5e83-48b7-b61f-c2066eabd8f9" name="Удаление клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33982984-78dc-4660-b011-12b1f98f95a9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a78ecb5e-8f09-44e4-8175-c0fc23786840" name="Изменение данных клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcdcf0bb-bb87-4a48-a0f5-94f9cf2e34f9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f23c77f5-6933-4217-a02e-4c98b4e13c20" name="Поиск клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ab471ff-b32e-4b71-91bb-d5ccf595fbe2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="938cf16d-7801-4c9f-a2cf-4d1396ed7255" name="Регистрация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68d49131-8fb4-42d2-a39b-5350d1ee0729" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="97e54239-68ee-4ae7-9539-02e76c1941c8" name="Добавление личных данных" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="324a4643-bcfb-444c-8856-dd9819c6245a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="19bfd7cc-7d4a-4ba4-b4d2-d64c11d7a211" name="Изменение личных данных" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a680b0d-5c93-44ce-a8c8-19c7710bcd82" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ff253d38-50d5-4395-8836-639ff7d68b53" name="Просмотр списка своих заказов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a964ceb-acb8-465e-9791-c765be3cab50" />
+        <additions>
+          <include Id="c18248c2-6100-4554-94ca-9c2711f7d734">
+            <useCaseMoniker Id="f4629d0b-7735-491e-b18a-49c93f72be3e" LastKnownName="Добавление заказа" />
+            <elementDefinition Id="06bf0f26-5b70-461c-8d40-062e2ee5426a" />
+          </include>
+          <include Id="1d0b2867-1998-425d-bded-27ee39fbb5e9">
+            <useCaseMoniker Id="2bfc0f99-d300-4579-b4f3-e8ff31ec98b2" LastKnownName="Изменение заказа" />
+            <elementDefinition Id="49dce8a3-dde0-4bf0-b24b-cca2352877a9" />
+          </include>
+          <include Id="532fc61a-a596-4767-8375-7fa7c30ba1ed">
+            <useCaseMoniker Id="78c62553-f2f4-43fb-8c26-985054d48831" LastKnownName="Удалнение заказа" />
+            <elementDefinition Id="73032032-589e-4d1d-be71-b36ea91eb888" />
+          </include>
+          <include Id="5f2fe666-8af0-4a13-bfc5-f6a578f5c42a">
+            <useCaseMoniker Id="928d7b21-e845-4c68-952b-1025925b41e3" LastKnownName="Фильтрация списка заказов" />
+            <elementDefinition Id="4602e35c-c76c-4639-8f91-2d052c235dc1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f4629d0b-7735-491e-b18a-49c93f72be3e" name="Добавление заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a33c7a65-9384-402c-aa86-c306335d245b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2bfc0f99-d300-4579-b4f3-e8ff31ec98b2" name="Изменение заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1edab371-aac3-492b-a8d2-b16cc29deba0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78c62553-f2f4-43fb-8c26-985054d48831" name="Удалнение заказа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4118ed55-5fa7-4e46-9e9a-66db75211a77" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8876a3b9-69fd-473a-b42d-4166fb47cbde" name="Просмотр списка сотрудников" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc436c5f-9864-4161-8e47-b5fac7c13064" />
+        <additions>
+          <include Id="f77dbcc8-8802-4368-98c0-22b658fd97d8">
+            <useCaseMoniker Id="b0de30e0-02dc-418b-95b6-c1dcf7dfac01" LastKnownName="Выбор сотрудника" />
+            <elementDefinition Id="1c2d2b92-3005-4ff1-a693-3e6e178ee64c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b0de30e0-02dc-418b-95b6-c1dcf7dfac01" name="Выбор сотрудника" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2f9e88c-5944-419d-a547-c4ef208c9d48" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2fa16e0c-f5e5-4736-82fc-9ff9d98812a7" name="Просморт списка услуг" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bc09788-dbf6-4e6a-9179-3e9da3c798a9" />
+        <additions>
+          <include Id="b69a9c38-a105-43eb-a0fc-f34d42bc0ca7">
+            <useCaseMoniker Id="b414def3-323e-462f-9373-dcc4730df70c" LastKnownName="Выбор услуги" />
+            <elementDefinition Id="83891581-e81b-400a-adf2-3b55aa2dfc0f" />
+          </include>
+          <include Id="20f59571-a5d9-4c6b-8c35-cb204a9de5dd">
+            <useCaseMoniker Id="ab6d7391-c5d1-4005-b25b-222c012a60e6" LastKnownName="Выбор тарифа" />
+            <elementDefinition Id="72e7c6bd-3003-473b-9de1-3fe48abf71ad" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b414def3-323e-462f-9373-dcc4730df70c" name="Выбор услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92c2cf76-31f2-4909-8f17-b15917b20e4d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="deebcd81-268d-49c3-b094-b6fd40495abf" name="Просмотр списка доп услуг" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8722af92-dad1-471c-ad8f-1d9db4944cd3" />
+        <additions>
+          <include Id="edb9f086-0057-46c1-a44d-15b61cf39ff2">
+            <useCaseMoniker Id="80d79c50-7df8-4cd5-a48b-6cfbc807e2c3" LastKnownName="Выбор доп услуги" />
+            <elementDefinition Id="4cca9e63-e460-4030-8dcb-af11fa4a9967" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="80d79c50-7df8-4cd5-a48b-6cfbc807e2c3" name="Выбор доп услуги" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="371061c9-b0c6-44cc-bffe-fa8f1b067bd9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92dcd590-4b06-41b1-a018-fc7f5e9ef48f" name="Просмотр списка фишек" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c301c992-9a59-426d-a798-b03fb2c34b7c" />
+        <additions>
+          <include Id="5b31ae34-8345-4a6e-b4a8-cc6c16e08cbe">
+            <useCaseMoniker Id="75b65892-a678-48cc-b63d-5f4f99a1190f" LastKnownName="Выбор фишки" />
+            <elementDefinition Id="e0375e41-d269-4f78-8252-a7d0af3de514" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="75b65892-a678-48cc-b63d-5f4f99a1190f" name="Выбор фишки" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36ccb228-5f7d-4796-aa7f-975edbf34ce6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ab6d7391-c5d1-4005-b25b-222c012a60e6" name="Выбор тарифа" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9bcdb2b7-f0f8-4191-ad64-8a817e522fd5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="65847b20-7ac6-4d4f-bf14-4a13690fc03a" name="Фильтрация списка заказов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0f74b55-18e4-4f8b-b853-9276b309d610" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="928d7b21-e845-4c68-952b-1025925b41e3" name="Фильтрация списка заказов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8035843c-6e10-4ec1-84b6-d234505e70b0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e03c4ac7-5231-42b6-acf0-76bc9179dc88" name="Карточка клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7b72e5f-218b-447f-a16f-1994f0f2667e" />
+        <additions>
+          <include Id="e5486292-7b93-4a1a-88c6-999d172ccb75">
+            <useCaseMoniker Id="59f2de45-11e7-4407-950d-26fe2af367fa" LastKnownName="Заказы клиента" />
+            <elementDefinition Id="7bf33d7e-fda1-4bb4-b319-26269fc7331d" />
+          </include>
+          <include Id="341056fe-f21d-4bbe-9133-e6933d493fc4">
+            <useCaseMoniker Id="b6a114b9-64fc-4987-a011-7ee61ecbccb0" LastKnownName="История заказов клиента" />
+            <elementDefinition Id="5f24379d-f430-418e-963a-443dca7a6022" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="59f2de45-11e7-4407-950d-26fe2af367fa" name="Заказы клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc3354aa-3bab-47da-8651-9f33a4eb1792" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6a114b9-64fc-4987-a011-7ee61ecbccb0" name="История заказов клиента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b09cf3b7-9ad7-4534-8e50-7ce096b4cfcc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c18bbde9-6168-4502-beb8-84a7ee4d0171" name="Просмотр списка сценариев" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a197c52b-9f2f-4d19-8d21-53b790b5f977" />
+        <additions>
+          <include Id="07158f9c-9dfe-4a1f-bdad-0c0ecff1559a">
+            <useCaseMoniker Id="2d44ae8c-790f-4719-989b-98dc7a598d26" LastKnownName="изменение данных сценария" />
+            <elementDefinition Id="6b10841a-5a5b-4ea6-aeb5-bf07cb0cd560" />
+          </include>
+          <include Id="fc6531f3-986a-4676-ac17-ca5f5a649fe5">
+            <useCaseMoniker Id="397dd49c-2da8-4e1a-80b9-8809738e0bb3" LastKnownName="удаление сценария" />
+            <elementDefinition Id="524ca23f-3053-443a-ab20-eb5c1006a79a" />
+          </include>
+          <include Id="15af7811-68f5-4ed2-8827-6a79e824fdad">
+            <useCaseMoniker Id="6c3ff5d1-c24c-4337-85ee-12eb03e76321" LastKnownName="добавление сценария" />
+            <elementDefinition Id="fe437d30-f1f7-4f86-b231-a606ed24abb8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6c3ff5d1-c24c-4337-85ee-12eb03e76321" name="добавление сценария" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a2a0e48-daf2-456c-baa7-f85e7ad42233" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="397dd49c-2da8-4e1a-80b9-8809738e0bb3" name="удаление сценария" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="81b3397b-004e-411d-a941-e59f9f407491" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2d44ae8c-790f-4719-989b-98dc7a598d26" name="изменение данных сценария" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="34ee99f5-c11a-4deb-92ef-7088a4f23a83" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="77880036-b604-43b5-9ab5-be11b916b97f" name="Просмотр списка отзывов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41520e1e-fefe-4a1d-972b-6e354138f829" />
+        <additions>
+          <include Id="5dee49a7-20e3-4342-a8df-b791e4ecc3ce">
+            <useCaseMoniker Id="a4410ea2-1690-47ec-9767-bd9c30394f1e" LastKnownName="Добавление отзыва" />
+            <elementDefinition Id="f4400051-579a-4a16-ad8d-2af5ce62fb56" />
+          </include>
+          <include Id="ca2377a9-6301-4c78-b9af-935a1e7b307e">
+            <useCaseMoniker Id="969723ad-6e09-4227-97a1-6d5aa384c7d1" LastKnownName="Изменение отзыва" />
+            <elementDefinition Id="ad368047-6c3b-44a4-bfe0-3a593af4422d" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a4410ea2-1690-47ec-9767-bd9c30394f1e" name="Добавление отзыва" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d276ccd-adec-4c8b-b322-bd7c9397649f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="969723ad-6e09-4227-97a1-6d5aa384c7d1" name="Изменение отзыва" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9a410727-9881-48a8-aef2-c241121e8d3f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="314778a5-4f23-4c69-baa3-15f66e370ce2" name="Просмотр рейтинга" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="561d7156-ab05-4c55-926f-f243b02304d2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d2b99ec-7d59-4901-a84b-2af2ef8658cb" name="Просмотр рейтинга" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3920349a-de48-4c63-9294-af73738816a4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="376a7309-5815-4b9c-8e04-a9e71d3eb7c5" name="диаграммы_рпс">
+    <elementDefinition Id="f019a18f-83db-4c54-b079-7deda2b3b7f6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ce746fdf-593a-4654-beb1-96ce35f37016">
+        <profileInstance Id="61781548-f0f6-4c5e-8de4-58144c6722d8" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="06209fb2-b696-4003-a1c5-106044627480">
+        <profileInstance Id="717806fe-e74e-4f43-8d1b-65ff63a3f829" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

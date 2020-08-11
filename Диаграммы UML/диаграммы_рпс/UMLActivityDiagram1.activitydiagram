@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="3585a4a9-2e61-4fd3-8cd2-72d3a3db0447" name="диаграмма состояний заказа" linkedPackageId="c0b9197d-dec3-46ad-af83-4286356ae911" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c07c1b82-8104-4688-bace-caf67007a891" name="диаграмма состояний заказа" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="a851e1b3-ce06-4638-8cff-45e8f0fdfd66" />
+        <nodes>
+          <initialNode Id="4995be98-aa96-4dca-b78e-e00675574e79" name="Initial1" isLeaf="false">
+            <elementDefinition Id="138abb14-9da9-4803-9e73-0f3f1f11ff31" />
+            <flowNodeTargets>
+              <controlFlow Id="f0fc517b-ca74-46a9-af66-c87e969252f3" isLeaf="false">
+                <opaqueActionMoniker Id="e31a0476-6b4d-4ecb-96ba-5a307ec8fa5c" LastKnownName="Создан заказ" />
+                <elementDefinition Id="6291ebe3-e928-40c8-becc-d04ca3d0274c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e31a0476-6b4d-4ecb-96ba-5a307ec8fa5c" name="Создан заказ" isLeaf="false">
+            <elementDefinition Id="a66233e4-83ac-4543-a69e-b1ce0b797c93" />
+            <flowNodeTargets>
+              <controlFlow Id="bb9224c0-6737-4478-9b25-e9da4f5b607d" guard="Выбираем услугу,доп.услугу,фишки,сценарий" isLeaf="false">
+                <opaqueActionMoniker Id="e4af7277-5709-4a53-94c5-0253d56a806e" LastKnownName="Добавлена услуга,доп.услуга,фишка,сценарий" />
+                <elementDefinition Id="534d9b5f-0c46-4b75-9481-3bd7313c6f6b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e4af7277-5709-4a53-94c5-0253d56a806e" name="Добавлена услуга,доп.услуга,фишка,сценарий" isLeaf="false">
+            <elementDefinition Id="dfd68b5e-2ddf-4f1d-bf00-ca9b4636de07" />
+            <flowNodeTargets>
+              <controlFlow Id="3decc6dd-78f4-4cbd-b80f-c1380aaa9bbf" isLeaf="false">
+                <decisionNodeMoniker Id="e056fa95-63b7-4aef-847d-c18628c13f3a" LastKnownName="Decision1" />
+                <elementDefinition Id="1c887d46-a834-4915-b080-013e5a3b4e56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="e056fa95-63b7-4aef-847d-c18628c13f3a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="c22031ce-753a-4856-9d99-8a1f7fd477da" />
+            <flowNodeTargets>
+              <controlFlow Id="09629245-809b-4b31-bbee-e601e885e3a6" isLeaf="false">
+                <opaqueActionMoniker Id="e4af7277-5709-4a53-94c5-0253d56a806e" LastKnownName="Добавлена услуга,доп.услуга,фишка,сценарий" />
+                <elementDefinition Id="1d2fc61c-b2e9-4453-a8d8-378ddce0a524" />
+              </controlFlow>
+              <controlFlow Id="29c868d8-017b-4518-8ff6-1e30a8c862a9" guard="Заказ добавлен\не добавлен\отменен" isLeaf="false">
+                <opaqueActionMoniker Id="356b0703-83dd-416a-86b5-d88ac5212330" LastKnownName="Определена стоимость заказа" />
+                <elementDefinition Id="b1147764-61b2-43f4-b04c-589bf68c3264" />
+              </controlFlow>
+              <controlFlow Id="6d5667e1-22db-49e5-a17a-83429ff220a4" isLeaf="false">
+                <opaqueActionMoniker Id="a99106cc-d1ce-41df-878e-79fc7f558ceb" LastKnownName="Заказ отменен" />
+                <elementDefinition Id="132d2fe0-677f-4cd4-8d24-5a88669149e3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="356b0703-83dd-416a-86b5-d88ac5212330" name="Определена стоимость заказа" isLeaf="false">
+            <elementDefinition Id="5be57a08-8aa5-4683-80c8-0424c7e82f4d" />
+            <flowNodeTargets>
+              <controlFlow Id="7f46112e-2c14-4056-afef-37fc16156167" isLeaf="false">
+                <decisionNodeMoniker Id="aebe7001-489e-4372-8660-149eca2b4071" LastKnownName="Decision2" />
+                <elementDefinition Id="c9c919f9-8ec8-4e19-bb15-758c701e6338" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="174fafa7-bbb5-45c5-974c-cdf36764de0f" name="Статус заказа &quot;Выполнен&quot;,иначе &quot;Отменен&quot;" isLeaf="false">
+            <elementDefinition Id="c406f3e3-a783-42b6-9772-1a0ee4d20375" />
+            <flowNodeTargets>
+              <controlFlow Id="399592a0-986d-4394-b4f3-a96e3f60c99a" guard="Выход из программы" isLeaf="false">
+                <activityFinalNodeMoniker Id="344b22ae-589a-4977-98fc-471baefb4399" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a3559215-0efc-484b-8e46-9f0d69393fbc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4d883847-a311-404d-864e-216ddd4bc643" name="Заказ не оформлен" isLeaf="false">
+            <elementDefinition Id="587395f0-f433-4abf-8c8e-4853b3b099a4" />
+            <flowNodeTargets>
+              <controlFlow Id="1f19986b-6d78-4ed9-9d3d-5cc38f48979f" isLeaf="false">
+                <opaqueActionMoniker Id="356b0703-83dd-416a-86b5-d88ac5212330" LastKnownName="Определена стоимость заказа" />
+                <elementDefinition Id="2f33d02e-9da1-4c22-8776-a9495a3eee27" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1bf10af9-1470-4149-9ccc-9bdc17cbbcf1" name="Статус заказа &quot;Не выполнен&quot;" isLeaf="false">
+            <elementDefinition Id="3dd25669-0662-48e0-b53d-ef4d8c2ff2a6" />
+            <flowNodeTargets>
+              <controlFlow Id="ab0e18eb-bd1f-44ce-83fb-17385470d00b" isLeaf="false">
+                <opaqueActionMoniker Id="356b0703-83dd-416a-86b5-d88ac5212330" LastKnownName="Определена стоимость заказа" />
+                <elementDefinition Id="00334b90-4f51-4580-b670-f1df77683bc3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="344b22ae-589a-4977-98fc-471baefb4399" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="b8c655c2-e44d-4172-86a2-bbb7a5b72fe6" />
+          </activityFinalNode>
+          <decisionNode Id="aebe7001-489e-4372-8660-149eca2b4071" name="Decision2" isLeaf="false">
+            <elementDefinition Id="81bd42ee-0564-4959-b4e3-f0830a4e81dc" />
+            <flowNodeTargets>
+              <controlFlow Id="9c8891f5-6be4-491d-97f4-d87681a69499" guard="Клиент оплатил" isLeaf="false">
+                <opaqueActionMoniker Id="174fafa7-bbb5-45c5-974c-cdf36764de0f" LastKnownName="Статус заказа &quot;Выполнен&quot;,иначе &quot;Отменен&quot;" />
+                <elementDefinition Id="1ef325b9-1cf4-4c30-b5d4-f73b14b98971" />
+              </controlFlow>
+              <controlFlow Id="14541708-f61c-4f22-91d3-a83c69786698" guard="Состояние счета заказа" isLeaf="false">
+                <opaqueActionMoniker Id="4d883847-a311-404d-864e-216ddd4bc643" LastKnownName="Заказ не оформлен" />
+                <elementDefinition Id="4f419e14-9095-4cbb-9b23-7ffbda712d1e" />
+              </controlFlow>
+              <controlFlow Id="5b48f117-5cc9-4ef2-9645-39d27546726a" guard="Клиент не оплатил" isLeaf="false">
+                <opaqueActionMoniker Id="1bf10af9-1470-4149-9ccc-9bdc17cbbcf1" LastKnownName="Статус заказа &quot;Не выполнен&quot;" />
+                <elementDefinition Id="1e65dc84-41ba-461e-a01d-e246c25f7311" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a99106cc-d1ce-41df-878e-79fc7f558ceb" name="Заказ отменен" isLeaf="false">
+            <elementDefinition Id="844a5189-e310-49c5-82b0-bf3d617df321" />
+            <flowNodeTargets>
+              <controlFlow Id="1e673516-91e5-4d63-9f77-3410f8fb12c9" isLeaf="false">
+                <opaqueActionMoniker Id="174fafa7-bbb5-45c5-974c-cdf36764de0f" LastKnownName="Статус заказа &quot;Выполнен&quot;,иначе &quot;Отменен&quot;" />
+                <elementDefinition Id="62ab0138-2f0f-40b6-919c-a9773eb2252c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c0b9197d-dec3-46ad-af83-4286356ae911" name="диаграммы_рпс">
+    <elementDefinition Id="f019a18f-83db-4c54-b079-7deda2b3b7f6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="7d006d8c-14c1-4305-be0d-c28e1462566b">
+        <profileInstance Id="84c8cde9-8422-4a12-ae0e-4e3124111f91" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38992f33-29da-4ec4-a700-7aabb443ed0a">
+        <profileInstance Id="e3d9505d-3bc3-4115-967e-65ca290ca34b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
